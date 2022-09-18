@@ -1,12 +1,15 @@
 @media all and (min-width: 767.99px) {
+  main {
+    padding: 1em;
+  }
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    max-width: 700px;
     max-height: 100%;
+    max-width: 1000px;
   }
 
   .image {
