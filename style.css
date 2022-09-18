@@ -1,8 +1,135 @@
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+/*
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+*/
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+/*Fonts*/
+.fraunces {
+  font-family: 'Fraunces', serif;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.f400 {
+  font-weight: 400;
+}
+
+.f700 {
+  font-weight: 700;
+}
+
+/*Beginning*/
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Cream);
+}
+
+p {
+  font-size: 14px;
+}
+
+picture img {
+  width: 100%;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  background-color: var(--White);
+  border-radius: .5em;
+  max-width: 1200px;
+}
+
+.texts {
+  padding: 2em;
+  color: var(--Dark-grayish-blue);
+}
+
+.text-perfume {
+  letter-spacing: .3em;
+  margin-block: .5em;
+}
+
+h1 {
+  color: var(--Very-dark-blue);
+}
+
+.mid-text {
+  line-height: 1.5em;
+  font-size: 1em;
+  margin-block: 1.25em;
+}
+
+.price-new {
+  color: var(--Dark-cyan);
+  font-size: 2.5em;
+}
+
+.price-old {
+  margin-inline-start: 1em;
+  text-align: center;
+  text-decoration-line: line-through;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--Dark-cyan);
+  margin: auto;
+  padding: .8em;
+  color: var(--White);
+  width: 100%;
+  font-size: 1.1em;
+  border-radius: .4em;
+  border: 0;
+  margin-block-start: 1em;
+  transition: .1s ease;
+}
+
+button span * {
+  margin-inline: .4em;
+}
+
+button:active {
+  background-color: #15480F;
+  color: floralwhite;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
