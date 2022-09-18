@@ -1,0 +1,24 @@
+@media all and (min-width: 767.99px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: 700px;
+    max-height: 100%;
+  }
+
+  .image {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  picture img {
+    border-radius: 0;
+    height: 100%;
+    padding: 0;
+  }
+
+  .texts {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+}

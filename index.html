@@ -10,7 +10,7 @@
 
   <title>Frontend Mentor | Product preview card component</title>
   <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="queries.css">
 
 </head>
 
@@ -18,10 +18,13 @@
 
   <main>
     <div class="container">
-      <picture>
-        <source srcset="/images/image-product-desktop.jpg" media="(min-width: 767.99px">
-        <img src="/images/image-product-mobile.jpg" alt="Perfume image">
-      </picture>
+      <div class="image">
+        <picture>
+          <source srcset="/images/image-product-desktop.jpg" media="(min-width: 767.99px">
+          <img src="/images/image-product-mobile.jpg" alt="Perfume image">
+        </picture>
+
+      </div>
       <div class="texts">
         <p class="montserrat f400 text-perfume">PERFUME</p>
         <h1 class="fraunces f700">Gabrielle Essence Eau De Parfum</h1>
